@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="500" height="500">
+  <!-- Rocket Body & Nosecone -->
+  <path d="M40,80 L39,35 Q38,24,50,10 Q62,24,61,35 L60,80 Z" fill="#123456" />
+
+  <!-- Left Fin -->
+  <path d="M38,55 L26,75 L27,90 L38,85 Z" fill="#123456" />
+
+  <!-- Right Fin -->
+  <path d="M62,55 L74,75 L73,90 L62,85 Z" fill="#123456" />
+
+  <!-- Engine Nozzle -->
+  <path d="M45,78 L44,88 L56,88 L55,78 Z" fill="#123456" />
+</svg>
