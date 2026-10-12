@@ -10,7 +10,7 @@
     <script type="module" src="js/index.mjs"></script>
   </head>
   <body>
-    <header>
+    <header id="page-header">
       <div id="header-content">
         <a href="/" id="title">
           <span class="gradient-title">Julian Liu</span>
@@ -57,7 +57,7 @@
         </p>
       </section>
       <section>
-        <p class="section-title" id="experience">Experience</p>
+        <h3 id="experience">Experience</h3>
         <p>
           I've worked in application support on bug fixes and feature requests across enterprise IT systems,
           and in platform development at an AI-native startup. 
@@ -67,16 +67,51 @@
           <a href="https://bierre.ca" target="_blank">bierre,</a> 
           a platform hosting my transparent research tool.
         </p>
+        <article>
+          <header>
+            <h4>Bierre - Software Engineer</h4>
+            <time>June 2026 to Present, Winnipeg</time>
+          </header>
+          <details name="experience">
+            <ul>
+              <li>Designed and built a scholarly research platform for transparent search & ranking. </li>
+              <li>Engineered a smart search pipeline that uses open-source libraries to help rank research papers based on the user's research domain, while noting important metrics: citation count, impact factor.</li>
+              <li>Two-service system, deployed with Docker on a self-managed AWS Lightsail VM, plus an Nginx reverse proxy for per-route rate limiting.</li>
+              <li>Planned development work by writing PRDs and implementation plans to scope and chunk features, then directed iterative Claude Code/GitHub Copilot sessions using custom skills to enforce brevity, Python code quality, modularity, and complete testing.</li>
+              <li>Integrated Sentry for observability, which pinpointed erroneous logic and slow endpoints.</li>
+            </ul>
+          </details>
+        </article>
+        <article>
+          <header>
+            <h4>Eversoul - Software Developer</h4>
+            <time> January - April 2026, Remote</time>
+          </header>
+          <details name="experience">
+            <ul>
+              <li>Designed and built a product site from a Figma design to an Azure App Service deployment. React app with the Vite framework, backed by an ASP.NET Core REST API written in C#. </li>
+              <li>Integrated Azure AI services to create live conversational avatars with custom cloned voices.</li>
+              <li>Implemented a PWA enabling Android/iOS mobile installation and app-like access to the platform.</li>
+            </ul>
+          </details>
+        </article>
+        <article>
+          <header>
+            <h4>Manitoba Blue Cross - Application Support Developer</h4>
+            <time>May - August 2024, Winnipeg</time>
+          </header>
+          <details name="experience">
+            <ul>
+              <li>Modified student healthcare enrolment file processing to process several files per job, improving AWS ECS container compute utilization by 4.5 times. </li>
+              <li>Resolved field-population defects in enrolment reports, working with the reporting analyst to ensure accurate, up-to-date data for the Member Services team.</li>
+              <li>Redesigned employee salary table UI with input from business users and the application support team, giving Underwriting Department staff a clear view of salary changes.</li>
+            </ul>
+          </details>
+        </article>
       </section>
       <section>
-        <p class="section-title" id="projects">Projects</p>
+        <h3 id="projects">Projects</h3>
         <p>wowowow</p>
-      </section>
-      <section>
-        <p class="section-title">Big Summer Blowout</p>
-        <p>yoohoo</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <p>yoohoo</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <p>yoohoo</p>
       </section>
     </main>
     <a href="#" id="recall">
