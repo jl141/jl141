@@ -146,7 +146,7 @@ section {
 
 article {
   margin: 0.2rem;
-  padding: 0.2rem;
+  padding: 0.5rem;
   border-radius: 1rem;
   transition: 
     border-radius 0.5s ease,
@@ -174,9 +174,12 @@ header > time {
 }
 
 details {
-  margin: 0.2rem 0.7rem 0.5rem;
+  margin: 0rem 0.7rem 0.5rem;
   interpolate-size: allow-keywords;
   list-style: none;
+}
+details > summary {
+  display: none;
 }
 details::details-content {
   height: 0;
