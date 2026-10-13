@@ -1,0 +1,21 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 100 100"
+  fill="#123456">
+  <!-- Background -->
+  <rect
+    x="0"
+    y="0"
+    rx="10"
+    width="100%"
+    height="100%"
+    fill="white" />
+
+  <!-- A rx ry rotation >180? clockwise? finalx finaly -->
+
+  <!-- J -->
+  <path d="M37,15 L47,15 L47,65 A20,20,0,0,1,7,65 L17,65 A10,10,0,0,0,37,65 Z" fill="#123456" />
+
+  <!-- L -->
+  <path d="M53,15 L63,15 L63,75 L93,75 L93,85 L63,85 L53,85 L" fill="#123456" />
+</svg>
