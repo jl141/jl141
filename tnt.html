@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Julian Liu</title>
+    <link rel="icon" type="image/svg" href="favicon/favicon.svg?">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet">
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="js/index.mjs"></script>
+  </head>
+  <body>
+    <header id="page-header">
+      <div id="header-content">
+        <a href="./" id="title">
+          <span class="gradient-title">Julian Liu</span>
+        </a>
+        <div id="nav">
+          <a href="https://github.com/jl141" target="_blank" class="nav-item">GitHub</a>
+          <a href="https://linkedin.com/in/lazjl" target="_blank" class="nav-item">LinkedIn</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h3 id="notes">T&T</h3>
+        <p>
+          Some tools/tricks I enjoy and use often.
+        </p>
+        <article>
+          <header>
+            <h4>Jumpcut</h4>
+            <time>Clipboard text history</time>
+          </header>
+          <details name="experience">
+            <summary></summary>
+            <ul>
+              <li>Simple MacOS clipboard history.</li>
+              <li>I only need clipboard history for text. Maybe I'll hack this or switch to something else if I end up needing image support.</li>
+              <li>Link to site: <a href="https://snark.github.io/jumpcut/" target="_blank">Jumpcut</a></li>
+            </ul>
+          </details>
+        </article>
+        <article>
+          <header>
+            <h4>Rectangle</h4>
+            <time>Window sizing/placement</time>
+          </header>
+          <details name="experience">
+            <summary></summary>
+            <ul>
+              <li>Offers straightforward keybinds to resize and move windows around. Can also easily move windows across multiple displays.</li>
+              <li>Cleaner than manual resizing and faster than MacOS's built-in resize menu.</li>
+              <li>Link to site: <a href="https://rectangleapp.com" target="_blank">Rectangle</a></li>
+            </ul>
+          </details>
+        </article>
+        <article>
+          <header>
+            <h4>Linearmouse</h4>
+            <time>Mouse & trackpad tool</time>
+          </header>
+          <details name="experience">
+            <summary></summary>
+            <ul>
+              <li>I enjoy pointer acceleration when I'm using my Macbook's trackpad. I do not enjoy it when I'm trying to play Osu or Minecraft.</li>
+              <li>Linearmouse offers control over pointer speed/acceleration and scroll direction across different tracking devices.</li>
+              <li>Link to site: <a href="https://linearmouse.app/en/" target="_blank">Linearmouse</a></li>
+            </ul>
+          </details>
+        </article>
+        <article>
+          <header>
+            <h4>Ice</h4>
+            <time>Menu bar management</time>
+          </header>
+          <details name="experience">
+            <summary></summary>
+            <ul>
+              <li>Hides messy menu bar until you hover over it.</li>
+              <li>Control item spacing for space efficiency. Mine are quite compact :)</li>
+              <li>Search through menu bar items (not updated for newer MacOS versions yet).</li>
+              <li>Link to site: <a href="https://icemenubar.app" target="_blank">Ice Menu Bar</a></li>
+            </ul>
+          </details>
+        </article>
+        <article>
+          <header>
+            <h4>MacOS Thermal Checkup</h4>
+            <time>Terminal commands</time>
+          </header>
+          <details name="experience">
+            <summary></summary>
+            <ul>
+              <li>I'm not aware of an easier way to check thermal load on MacOS. Need root permissions for <code>powermetrics</code>; give password to <code>sudo</code>.</li>
+              <li>Flag <code>-s</code> specifies the type of sampler, and <code>-n</code> specifies the number of samples.</li>
+                <pre><samp>
+                  % sudo powermetrics -s thermal -n 1
+                </samp></pre>
+              <li>The result varies between: nominal, moderate, heavy, sleeping, & trapping. Should probably let your Mac cool down if at heavy or beyond.</li>
+            </ul>
+          </details>
+        </article>
+        <article>
+          <header>
+            <h4>MarkEdit</h4>
+            <time>Markdown text editor</time>
+          </header>
+          <details name="experience">
+            <summary></summary>
+            <ul>
+              <li>If I'm editing a lone markdown file (not part of some project repo) then I'll use <a href="https://github.com/MarkEdit-app/MarkEdit" target="_blank">MarkEdit</a> instead of VSCode.</li>
+              <li>Clean UI, with several preview options if you install the <a href="https://github.com/MarkEdit-app/MarkEdit-preview" target="_blank">preview extension</a>.</li>
+            </ul>
+          </details>
+        </article>
+        <article>
+          <header>
+            <h4>Tangerine</h4>
+            <time>Offline file converter</time>
+          </header>
+          <details name="experience">
+            <summary></summary>
+            <ul>
+              <li>Quite convenient. Check it out here: <a href="https://tangerineformac.com" target="_blank">Tangerine for Mac</a></li>
+            </ul>
+          </details>
+        </article>
+        <article>
+          <header>
+            <h4>Quick Word Counter</h4>
+            <time>Terminal commands</time>
+          </header>
+          <details name="experience">
+            <summary></summary>
+            <ul>
+              <li>Using <code>wc</code> in your shell is quicker than looking up a tool online, and uses <code>heredoc</code> to avoid having to escape apostrophes and quotations.</li>
+              <li>Start with this. The <code>-w</code> flag tells the <code>wc</code> tool to only count words. The double "less-than" feeds the impromptu document into <code>wc</code>.</li>
+                <pre><samp>
+                  % wc -w &lt;&lt; 'EOF'
+                </samp></pre>
+              <li>Enter, then paste your text.</li>
+                <pre><samp>
+                  heredoc> "THERE IT IS THAT'S THE WIN" - Marc Robert Lamont
+                </samp></pre>
+              <li>To end the file, type <code>EOF</code> on a new line. The word count will show up in the next line.</li>
+                <pre><samp>
+                  heredoc> the rain went away but the puddles cling around
+                  heredoc> EOF
+                        19
+                </samp></pre>
+            </ul>
+          </details>
+        </article>
+      </section>
+    </main>
+    <a href="#" id="recall">
+      <img src="icons/rocket.svg" height="48">
+    </a>
+    <footer>
+      <a href="./credits.html">credits</a>
+    </footer>
+  </body>
+</html>
