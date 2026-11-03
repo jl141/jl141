@@ -205,6 +205,23 @@ p {
   margin: 0.5rem;
 }
 
+code {
+  background-color: var(--border);
+  border-radius: 0.2rem;
+  padding: 0 0.2rem;
+}
+
+li ~ pre {
+  background-color: var(--text);
+  padding: 0rem 0.8rem;
+  margin: 0.5rem 0;
+}
+
+pre > samp {
+  background-color: transparent;
+  color: var(--primary);
+}
+
 /* Quote with translation on hover */
 .quote-tl {
   display: grid;
@@ -313,4 +330,8 @@ footer {
   flex-shrink: 0;
   border-top: 2px solid var(--border);
   box-sizing: border-box;
+}
+
+footer > a {
+  padding: 0 0.8rem;
 }
